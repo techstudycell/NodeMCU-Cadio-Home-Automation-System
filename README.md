@@ -5,35 +5,35 @@ If the internet is not available, then you can control the home appliances from 
 
 This ESP8266 NodeMCU home automation system has the following features:
 
-1.Control appliances with the voice command using Google Assistant.
-2.Control appliances with the voice command using Alexa.
-3.Control appliances with the Cadio app.
-4.Control home appliances manually without internet.
-5.Monitor real-time feedback in the Cadio, Google Home, and 6.Amazon Alexa App.
-7.Set Timer to control the devices automatically.
-7.Remember the previous state after the power cut (EEPROM).
-8.Can change the WiFi details through OTA.
-9.Don't have to write a single-line code. (No coding).
+1. Control appliances with the voice command using Google Assistant.
+2. Control appliances with the voice command using Alexa.
+3. Control appliances with the Cadio app.
+4. Control home appliances manually without internet.
+5. Monitor real-time feedback in the Cadio, Google Home, and 6.Amazon Alexa App.
+7. Set Timer to control the devices automatically.
+7. Remember the previous state after the power cut (EEPROM).
+8. Can change the WiFi details through OTA.
+9. Don't have to write a single-line code. (No coding).
 
 ## Tutorial Video on IoT Project using ESP8266 NodeMCU
 https://youtu.be/jKBywXI3hmE
 
 ## Required Components (Without PCB):
-1.ESP8266 NodeMCU.
-2.4-channel 5V SPDT Relay Module.
-3.Switches or pushbuttons (4no)
+1. ESP8266 NodeMCU.
+2. 4-channel 5V SPDT Relay Module.
+3. Switches or pushbuttons (4no)
 
 ## Required Components (With PCB):
-1.Relays 5v (SPDT) (4 no)
-2.BC547 Transistors (4 no)
-3.PC817 Optocuplors (4 no)
-4.510-ohm 0.25-watt Resistor (4 no) (R1 - R4)
-5.1k 0.25-watt Resistors (5 no) (R5 - R9)
-6.LED 5-mm (5 no)
-7.1N4007 Diodes (5 no) (D1 - D5)
-8.Push Buttons (4 no) or Switches
-9.Terminal Connectors
-10.5V DC supply
+1. Relays 5v (SPDT) (4 no)
+2. BC547 Transistors (4 no)
+3. PC817 Optocuplors (4 no)
+4. 510-ohm 0.25-watt Resistor (4 no) (R1 - R4)
+5. 1k 0.25-watt Resistors (5 no) (R5 - R9)
+6. LED 5-mm (5 no)
+7. 1N4007 Diodes (5 no) (D1 - D5)
+8. Push Buttons (4 no) or Switches
+9. Terminal Connectors
+10. 5V DC supply
 
 ## Circuit Diagram of the ESP8266 IoT Project
 This is the complete circuit diagram for this home automation project. I have explained the circuit in the tutorial video.
@@ -48,29 +48,29 @@ I have used a 5V mobile charger to supply the smart relay module.
 
 ## Install CADIO Firmware on ESP8266
 To make this project, first, you must install the Cadio Firmware on ESP8266.
-1.The CADIO dynamic firmware for ESP8266 NodeMCU is available to download from the Downloads Center.
-2.ESP8266 CADIO firmware consists of a single binary file located at the address 0x0.
-3.SPI flash mode is DIO.
-4.SPI flash speed is 40MHz.
-5.Make sure that the DoNotChgBin checkbox is activated.
-6.You should erase the current flash before start flashing the 7.firmware to avoid any issues.
-8.Now click on Start to install the Cadio Firmware.
+1. The CADIO dynamic firmware for ESP8266 NodeMCU is available to download from the Downloads Center.
+2. ESP8266 CADIO firmware consists of a single binary file located at the address 0x0.
+3. SPI flash mode is DIO.
+4. SPI flash speed is 40MHz.
+5. Make sure that the DoNotChgBin checkbox is activated.
+6. You should erase the current flash before start flashing the 7.firmware to avoid any issues.
+8. Now click on Start to install the Cadio Firmware.
 
 Now reset the ESP8266 NodeMCU and wait for 30 seconds. The inbuilt LEDs will start blinking which indicates it is in config mode.
 
 ## Configure the NodeMCU Using Cadio App
-1.Turn off mobile data and connect the "CADIO" hotspot created by the ESP8266.
-2.Open the Cadio app, and click on the 3-dash icon.
-3.Select Configuration.
-4.Select Switches Mode: "PRESS" for the push button. For 5.latched switch select "NORMAL"
-6.Select Relay Mode: "ACTIVE LOW". For active HIGH relay select "ACTIVE HIGH".
+1. Turn off mobile data and connect the "CADIO" hotspot created by the ESP8266.
+2. Open the Cadio app, and click on the 3-dash icon.
+3. Select Configuration.
+4. Select Switches Mode: "PRESS" for the push button. For 5.latched switch select "NORMAL"
+6. Select Relay Mode: "ACTIVE LOW". For active HIGH relay select "ACTIVE HIGH".
 
 ## Enter GPIO for Relays and WiFi Details
-1.Select the Switches wiring "PULLUP".
-2.Now enter the GPIO pins for Config button, Indicator LEDs and Devices as shown in the picture. Then click on the tick icon (in the top right corner).
-3.Click on YES to export the info file.
-Select the WiFi Name and enter the WiFi Password. Also, enter a unique unit name and tap on the tick icon.
-4.Wait for some time the dashboard will appear automatically.
+1. Select the Switches wiring "PULLUP".
+2. Now enter the GPIO pins for Config button, Indicator LEDs and Devices as shown in the picture. Then click on the tick icon (in the top right corner).
+3. Click on YES to export the info file.
+4. Select the WiFi Name and enter the WiFi Password. Also, enter a unique unit name and tap on the tick icon.
+5. Wait for some time the dashboard will appear automatically.
 
 Now we have to connect the ESP8266 NodeMCU to the circuit. Although you can make the circuit without using any PCB, but to make the circuit compact I have designed a PCB.
 
@@ -123,10 +123,10 @@ Then connect the NodeMCU board with the PCB.
 Now turn on the 5V DC supply. If the NodeMCU is connected to WiFi, the in-built blue LED will turn ON.
 
 ## Change the Device Name in CADIO App
-1.You have to long press on the related device button.
-2.Now tap on "Settings" to open the setting page.
-3.Give a Device name and select the Device icon. Then tap on the tick icon to exit. In a similar way change the device name for all the devices.
-4.In this way, you can change all the device names as per requirement
+1. You have to long press on the related device button.
+2. Now tap on "Settings" to open the setting page.
+3. Give a Device name and select the Device icon. Then tap on the tick icon to exit. In a similar way change the device name for all the devices.
+4. In this way, you can change all the device names as per requirement
 
 ## Control Relays With Cadio App
 If the NodeMCU ESP8266 is connected to WiFi, then you can control the home appliances from Cadio App.
@@ -134,23 +134,23 @@ If the NodeMCU ESP8266 is connected to WiFi, then you can control the home appli
 You can also monitor the real-time feedback from anywhere in the world.
 
 ## Connect CADIO With Google Home
-1.Open the Google Home app and create a Home.
-2.Then click on "+" and select "Set up device", the " works with Google".
-3.Now search for CADIO, and log in to CADIO account.
-4.All the devices from CADIO will be added to Google Home.
+1. Open the Google Home app and create a Home.
+2. Then click on "+" and select "Set up device", the " works with Google".
+3. Now search for CADIO, and log in to CADIO account.
+4. All the devices from CADIO will be added to Google Home.
 
 Now you can also control the appliances with voice commands using Google Assistant.
 
 ## Connect CADIO With Amazon Alexa
 Linking CADIO account with Amazon Alexa
 
-1.Open the Amazon Alexa app then click on YOUR SMART HOME SKILLS.
-2.Click on ENABLE SMART HOME SKILLS.
-3.Type CADIO in the Search bar, then click on CADIO.
-4.Click on ENABLE TO USE to enable CADIO skill.
-5.Now Log in using your CADIO account.
-6.Your CADIO account is now linked with Amazon Alexa.
-7.You can now control your smart devices from the Amazon Alexa app and supported devices.
+1. Open the Amazon Alexa app then click on YOUR SMART HOME SKILLS.
+2. Click on ENABLE SMART HOME SKILLS.
+3. Type CADIO in the Search bar, then click on CADIO.
+4. Click on ENABLE TO USE to enable CADIO skill.
+5. Now Log in using your CADIO account.
+6. Your CADIO account is now linked with Amazon Alexa.
+7. You can now control your smart devices from the Amazon Alexa app and supported devices.
 
 ## Connect the Appliances With the PCB
 Now connect the appliances with PCB as per the circuit diagram. Please take proper safety precautions while working with high voltage.
